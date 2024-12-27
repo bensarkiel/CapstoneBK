@@ -177,7 +177,7 @@
                                         ?>
                                         <button type='button' class='btn btn-sm btn-warning edit-btn'
                                             data-toggle="modal" data-target="#editModal<?php echo $data['id'] ?>"
-                                            disabled>Edit</button>
+                                            >Edit</button>
                                         <?php } else { ?>
                                         <button type='button' class='btn btn-sm btn-warning edit-btn'
                                             data-toggle="modal" data-target="#editModal<?php echo $data['id'] ?>"
@@ -201,12 +201,12 @@
                                                 </div>
                                                 <div class="modal-body">
                                                     <!-- Form edit data obat disini -->
-                                                    <form action="pages/jadwalPeriksa/updateJadwal.php" method="post">
+                                                    <form action="pages/jadwalPeriksa/updateJadwal.php" method="post" >
                                                         <input type="hidden" class="form-control" id="id" name="id"
                                                             value="<?php echo $data['id'] ?>" required>
                                                         <div class="form-group">
                                                             <label for="hari">Hari</label>
-                                                            <select class="form-control" id="hari" name="hari">
+                                                            <select class="form-control" id="hari" name="hari" readonly>
                                                                 <?php
                                                                 $hariArray = ['Senin','Selasa','Rabu','Kamis','Jumat','Sabtu'];
                                                                 foreach($hariArray as $hari){
@@ -220,13 +220,13 @@
                                                         <div class="form-group">
                                                             <label for="jamMulai">Jam Mulai</label>
                                                             <input type="time" class="form-control" id="jamMulai"
-                                                                name="jamMulai" required
+                                                                name="jamMulai" readonly required
                                                                 value="<?= $data['jam_mulai'] ?>">
                                                         </div>
                                                         <div class="form-group">
                                                             <label for="jamSelesai">Jam Selesai</label>
                                                             <input type="time" class="form-control" id="jamSelesai"
-                                                                name="jamSelesai" required
+                                                                name="jamSelesai" readonly required
                                                                 value="<?= $data['jam_selesai'] ?>">
                                                         </div>
                                                         <div class="form-group">

@@ -48,6 +48,9 @@
                                         <?php echo $data['jamMulai'] ?> - <?php echo $data['jamSelesai'] ?></li>
                                 </ul>
                                 <br><br>
+                                <p class="text-muted text-lg"> Tanggal Periksa :
+                                   <?php echo $data['tgl_periksa'] ?>
+                                </p>
                                 <p class="text-muted text-lg"> Obat yang harus dikonsumsi : <br>
                                     <?php 
                                     $namaObatArray = explode(',', $data['namaObat']);
@@ -55,6 +58,9 @@
                                         echo ($index + 1) . ". " . $namaObat . "<br>";
                                     }
                                     ?>
+                                </p>
+                                <p class="text-muted text-lg"> Catatan :
+                                   <?php echo $data['catatan'] ?>
                                 </p>
                                 <h5 class="text-muted text-lg"><strong>Biaya Periksa : <?php echo $data['biaya_periksa'] ?></strong></h5>
                             </div>

@@ -80,6 +80,12 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a href="editprofile.php" class="nav-link">
+                                <i class="fas fa-solid fas fa-th nav-icon"></i>
+                                <p>Edit Profile<span class="right badge badge-success">Dokter</span></p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a href="jadwalPeriksa.php" class="nav-link">
                                 <i class="fas fa-solid fa-hospital-user nav-icon"></i>
                                 <p>Jadwal Periksa <span class="right badge badge-success">Dokter</span></p>

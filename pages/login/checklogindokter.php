@@ -5,7 +5,7 @@ require '../../config/koneksi.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username = $_POST['username'];  // Nama yang dimasukkan user
-    $password = $_POST['password'];  // Password yang dimasukkan user, dienkripsi dengan MD5
+    $password = md5($_POST['password']);  // Password yang dimasukkan user, dienkripsi dengan MD5
 
     // Query untuk mencari data dokter berdasarkan nama
     $query = "SELECT * FROM dokter WHERE nama = '$username' AND password = '$password'";

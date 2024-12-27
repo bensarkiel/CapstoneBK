@@ -151,6 +151,10 @@
                                                                     <?php } ?>
                                                                 </select>
                                                             </div>
+                                                            <div class="form-group">
+                                                                <label for="total_harga">Total Harga</label>
+                                                                <input type="text" class="form-control" id="harga" name="harga" disabled>
+                                                            </div>
                                                             <button type="submit" class="btn btn-info">Periksa</button>
                                                         </form>
                                                     </div>
